@@ -91,7 +91,8 @@
   "pnpm": {
     "overrides": {
       "@types/react": "19.2.2",
-      "@types/react-dom": "19.2.2"
+      "@types/react-dom": "19.2.2",
+      "basic-ftp@>=5.0.0 <6.0.0": "^6.2.4"
     },
     "packageExtensions": {
       "@hookform/resolvers": {
@@ -99,6 +100,11 @@
           "zod": "^3.25 || ^4"
         }
       }
+    }
+  },
+  "//lockwright": {
+    "pnpm.overrides": {
+      "basic-ftp@>=5.0.0 <6.0.0": "lockwright: GHSA-5pm8-86m8-9m6r, GHSA-5rq4-664w-9x2c, GHSA-6v7q-wjvx-w8wg, GHSA-c475-qrg2-pj4r, GHSA-r4jh-29pc-gfqr, GHSA-rp42-5vxx-qpwr, GHSA-rpmf-866q-6p89"
     }
   }
 }

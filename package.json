@@ -91,7 +91,8 @@
   "pnpm": {
     "overrides": {
       "@types/react": "19.2.2",
-      "@types/react-dom": "19.2.2"
+      "@types/react-dom": "19.2.2",
+      "cross-spawn@>=5.0.0 <6.0.0": "^6.0.6"
     },
     "packageExtensions": {
       "@hookform/resolvers": {
@@ -99,6 +100,11 @@
           "zod": "^3.25 || ^4"
         }
       }
+    }
+  },
+  "//lockwright": {
+    "pnpm.overrides": {
+      "cross-spawn@>=5.0.0 <6.0.0": "lockwright: GHSA-3xgq-45jj-v275"
     }
   }
 }

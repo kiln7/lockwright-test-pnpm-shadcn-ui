@@ -7,3 +7,5 @@ allowBuilds:
   lightningcss: true
   unrs-resolver: true
   msw: false
+overrides:
+  'minimatch@>=10.0.0 <11.0.0': '^11.0.1' # lockwright: GHSA-g3hv-75wg-m249

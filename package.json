@@ -91,7 +91,8 @@
   "pnpm": {
     "overrides": {
       "@types/react": "19.2.2",
-      "@types/react-dom": "19.2.2"
+      "@types/react-dom": "19.2.2",
+      "yaml@>=2.0.0 <2.8.3": "^2.8.3"
     },
     "packageExtensions": {
       "@hookform/resolvers": {
@@ -99,6 +100,11 @@
           "zod": "^3.25 || ^4"
         }
       }
+    }
+  },
+  "//lockwright": {
+    "pnpm.overrides": {
+      "yaml@>=2.0.0 <2.8.3": "lockwright: GHSA-48c2-rrv3-qjmp"
     }
   }
 }

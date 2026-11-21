@@ -91,7 +91,9 @@
   "pnpm": {
     "overrides": {
       "@types/react": "19.2.2",
-      "@types/react-dom": "19.2.2"
+      "@types/react-dom": "19.2.2",
+      "glob@>=10.0.0 <11.0.0": "^14.0.2",
+      "glob@>=11.0.0 <12.0.0": "^14.0.2"
     },
     "packageExtensions": {
       "@hookform/resolvers": {
@@ -99,6 +101,12 @@
           "zod": "^3.25 || ^4"
         }
       }
+    }
+  },
+  "//lockwright": {
+    "pnpm.overrides": {
+      "glob@>=10.0.0 <11.0.0": "lockwright: GHSA-3g3m-2fjr-6pw4, GHSA-5j98-mcp5-4vw2",
+      "glob@>=11.0.0 <12.0.0": "lockwright: GHSA-3g3m-2fjr-6pw4, GHSA-5j98-mcp5-4vw2"
     }
   }
 }

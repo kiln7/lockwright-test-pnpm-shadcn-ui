@@ -91,7 +91,8 @@
   "pnpm": {
     "overrides": {
       "@types/react": "19.2.2",
-      "@types/react-dom": "19.2.2"
+      "@types/react-dom": "19.2.2",
+      "@vitest/mocker@>=3.0.0 <4.0.0": "^4.1.12"
     },
     "packageExtensions": {
       "@hookform/resolvers": {
@@ -99,6 +100,11 @@
           "zod": "^3.25 || ^4"
         }
       }
+    }
+  },
+  "//lockwright": {
+    "pnpm.overrides": {
+      "@vitest/mocker@>=3.0.0 <4.0.0": "lockwright: GHSA-82fw-gwwq-j7x9, GHSA-qxg6-89mg-rqv8"
     }
   }
 }

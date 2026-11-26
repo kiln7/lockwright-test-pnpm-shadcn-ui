@@ -91,7 +91,9 @@
   "pnpm": {
     "overrides": {
       "@types/react": "19.2.2",
-      "@types/react-dom": "19.2.2"
+      "@types/react-dom": "19.2.2",
+      "@eslint/plugin-kit@>=0.2.0 <0.3.0": "^0.3.4",
+      "katex@>=0.16.0 <0.17.0": "^0.18.2"
     },
     "packageExtensions": {
       "@hookform/resolvers": {
@@ -99,6 +101,12 @@
           "zod": "^3.25 || ^4"
         }
       }
+    }
+  },
+  "//lockwright": {
+    "pnpm.overrides": {
+      "@eslint/plugin-kit@>=0.2.0 <0.3.0": "lockwright: GHSA-xffm-g5w8-qvg7",
+      "katex@>=0.16.0 <0.17.0": "lockwright: GHSA-238p-pmpm-9mq7"
     }
   }
 }
